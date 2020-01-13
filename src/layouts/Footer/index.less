@@ -1,0 +1,46 @@
+@import '../../css/app/theme.less';
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 0 !important;
+	// background-color: #f0f2f5;
+	// background-color: #1890ff!important;
+	color: white;
+	z-index: 99;
+
+	.footer-line {
+		width: 100%;
+		text-align: center;
+		height: 24px;
+		line-height: 24px;
+
+		span {
+			display: inline;
+		}
+	}
+
+	.external-links {
+		margin-top: 10px;
+
+		&>span>.external-link-item {
+			margin: 0px 10px;
+
+			&:hover {
+				color: black;
+				cursor: pointer;
+			}
+		}
+	}
+
+	.footer-line {
+		&>span>label {}
+	}
+
+	footer {
+		background-color: #1890ff !important;
+		color: white !important;
+	}
+}

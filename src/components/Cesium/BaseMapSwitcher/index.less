@@ -1,0 +1,96 @@
+@import '../../../css/app/theme.less';
+._baseMapSwitcher {
+	border-radius: @theme-border-radius;
+	&:hover {
+		border: 2px solid transparent;
+	}
+	.baseMapList {
+		display: flex;
+		justify-content: space-evenly;
+		width: 128px;
+		border: 2px solid @theme-app-background-color;
+		box-shadow: @box-shadow-base;
+		border-radius: @theme-border-radius;
+		//transition: all @transition-duration;
+		&:hover {
+			width: 272px;
+			border: none;
+			box-shadow: none;
+			.baseMapItem {
+				border: 2px solid @theme-app-background-color;
+				border-radius: @theme-border-radius;
+				.label {
+					display: inline;
+				}
+			}
+			.hasSelectedItem {
+				border: 2px solid @primary-color;
+				.mask {
+					background-color: rgba(0, 0, 0, 0.25);
+					border-radius: @theme-border-radius;
+					.label {
+						display: inline !important;
+					}
+				}
+				.note{
+					display: block;
+				}
+			}
+		}
+		.baseMapItem {
+			width: 128px;
+			height: 68px;
+			&:last-child {
+				border-top-right-radius: @theme-border-radius;
+				border-bottom-right-radius: @theme-border-radius;
+			}
+			&:first-child {
+				border-top-left-radius: @theme-border-radius;
+				border-bottom-left-radius: @theme-border-radius;
+			}
+			&:hover {
+				border: 2px solid @primary-color;
+				.mask {
+					background-color: rgba(0, 0, 0, 0.25);
+					border-radius: @theme-border-radius;
+					.label {
+						display: inline;
+						color: @front-color;
+					}
+				}
+				.note{
+					display: block;
+				}
+			}
+			.mask {
+				background-color: transparent;
+				text-align: center;
+				line-height: 46px;
+				border-radius: 0.5*@theme-border-radius;
+				.label {
+					color: @theme-font-color2;
+					display: none;
+					transition: all @transition-duration;
+				}
+			}
+			.note{
+				display: none;
+			}
+		}
+	}
+	.note{
+		position: relative;
+		top: 1px;
+		left: 0px;
+		background-color: #3333338c;
+		height: 20px;
+		text-align: center;
+		border-radius: @theme-border-radius;
+	}
+	.note span{
+		font-size: 8px;
+		color: whitesmoke;
+		line-height: 18px;
+	}
+}
+

@@ -1,0 +1,50 @@
+._AttributePanel{
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  height: 186px;
+  width: 320px;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+  ._AttributePanelTitle{
+    height: 35px;
+    span{
+      left: 10px;
+      top: 6px;
+      position: absolute;
+    }
+  }
+  ._AttributePanelBody{
+    padding: 0 10px;
+    .ant-table table {
+      height: 100%;
+      width: 100%;
+    }
+    .ant-table-tbody{
+      background-color: #fff
+    }
+    .ant-table-tbody>tr>td, .ant-table-thead>tr>th{
+      padding: 9px 7px;
+    }
+    .ant-table-tbody tr:nth-child(even){
+        background: #f0f0f0
+    }
+    .ant-table-tbody tr td:nth-child(odd){
+      width: 35%
+    }
+    .ant-table-tbody .ant-spin-container{
+      border: 1px solid #e5e5e5;
+    }
+    .ant-spin-nested-loading>div>.ant-spin{
+      left: 50%;
+      top: 50%;
+    }
+    .ant-table-wrapper{
+      padding: 0;
+    }
+    .ant-table-scroll{
+      height: 143px;
+    }
+  }
+
+}

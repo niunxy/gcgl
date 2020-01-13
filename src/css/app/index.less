@@ -1,0 +1,240 @@
+/** 全局样式文件入口 */
+
+@import '~antd/dist/antd.less';
+@import './theme.less';
+
+// @app-background-color
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    font-family: Microsoft Yahei !important;
+    font-variant-numeric: tabular-nums;
+    font-size: 14px;
+    width: 100%;
+    min-width: 1600px;
+    height: 100%;
+    background-color: @theme-background-color-white;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.clearfix:after {
+    content: ' ';
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    display: block;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#editor-header {
+    >div {
+        & :last-of-type {
+            display: none !important;
+        }
+    }
+}
+
+.ant-table-title {
+    text-align: center;
+}
+
+/** 地图 */
+.cesium-viewer-bottom {
+    display: none !important;
+}
+
+.cesium-viewer-toolbar {
+    display: block;
+    position: absolute;
+    top: 474px !important;
+    right: 34px !important;
+    width: 20px;
+    z-index: 10;
+    /* button {
+        display: block !important;
+    } */
+}
+
+.baseMapItem {
+    z-index: 1000 !important;
+}
+
+.compass {
+    top: unset !important;
+    bottom: 232px !important;
+    right: -11px !important;
+}
+
+.navigation-controls {
+    border: none !important;
+    border-bottom: none !important;
+    right: 20px !important;
+    top: 527px !important;
+}
+
+.navigation-control {
+    border: none !important;
+}
+
+.navigation-control-icon-zoom-in {
+    position: relative !important;
+    border: 1px solid #444 !important;
+    border-radius: 14% !important;
+    width: 32px !important;
+    height: 32px !important;
+    padding-bottom: 4px !important;
+}
+
+.navigation-control-last {
+    border: 1px solid #444 !important;
+    border-radius: 14% !important;
+    width: 32px !important;
+    height: 32px !important;
+    margin-top: 3px !important;
+}
+
+.cesium-button {
+    background: #30333670 !important;
+}
+
+.cesium-toolbar-button {
+    border: none !important;
+}
+
+.ant-spin-spinning {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.note {
+    display: table-cell;
+    background-color: #3333338c;
+    height: 18px;
+    text-align: center;
+}
+
+.note span {
+    font-size: 8px;
+    color: whitesmoke;
+    line-height: 18px;
+}
+
+
+.breadcrumb {
+    padding: 6px 20px;
+    background-color: rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(203, 204, 206);
+    position: absolute;
+    width: calc(100% - 200px);
+    z-index: 2;
+}
+
+.placeHolder {
+    height: 35px;
+}
+
+.approval-detail-box .ant-steps-item-title:after,
+.approval-detail-box .ant-steps-item-tail:after {
+    height: 0;
+}
+
+.ant-menu-inline {
+    /* border-right: none; */
+    height: 100%;
+}
+
+.ant-layout-sider {
+    width: 200px !important;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    background-color: white;
+    height: 100%;
+
+    .ant-layout-sider-children {
+        display: inline-block;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .ant-layout-sider-trigger {
+        display: inline-block;
+        width: 18px !important;
+        min-width: 18px;
+        max-width: 18px;
+        background: transparent;
+        position: absolute;
+        left: 200px;
+        height: 85px;
+        line-height: 85px;
+        top: calc(50% - 85px);
+        background-image: url("../../../public/images/sider_down.png");
+        background-repeat: no-repeat;
+
+        .anticon {
+            display: none;
+        }
+    }
+}
+
+.ant-layout-sider-has-trigger {
+    padding-bottom: 0;
+}
+
+.ant-layout-sider.ant-layout-sider-collapsed {
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+
+    .ant-menu-inline-collapsed {
+        width: 60px !important;
+
+        .ant-menu-item {
+            padding: 0 22px !important
+        }
+    }
+
+    .ant-layout-sider-trigger {
+        left: 60px;
+        background-image: url("../../../public/images/sider_up.png");
+    }
+}

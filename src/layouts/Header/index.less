@@ -1,0 +1,123 @@
+@import '../../css/app/theme.less';
+
+.map-header-wrap {
+  width: 100%;
+  background-color: @headerBackgroundColor;
+  display: flex;
+  justify-content: center; // space-around;// center; //子元素水平居中
+  align-items: center; //子元素垂直居中
+
+  .map-header-content {
+    // display: inline-block;
+    display: flex;
+    justify-content: space-between; // space-around; // center; //子元素水平位置
+    align-items: center; //子元素垂直居中
+    color: @headerFontColor;
+    height: 100%;
+    width: 100%;
+
+
+    .map-header-title {
+      padding: 0px 40px;
+      margin: 0px;
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .map-header-loging {
+      display: inline-block;
+      padding-right: 40px;
+      width: 169px;
+      min-width: 169px;
+      height: 70px;
+      line-height: 70px;
+      background-color: #2177d7;
+
+      &>span {
+        padding: 0px 10px;
+      }
+
+      &>i {
+        font-size: 10px;
+      }
+
+      &>i:hover {
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      margin: 0px;
+    }
+  }
+
+  .notice-box {
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color: #333;
+
+    .ant-tabs-bar {
+      margin: 0 !important;
+    }
+
+    .notice-list {
+      position: absolute;
+      right: 0;
+      top: 76px;
+      z-index: 11;
+      border-radius: @border-radius-base;
+      background: @baseBackground;
+
+      text-align: left;
+      width: 400px;
+      box-shadow: 0 0 10px #cccccc;
+
+      ul {
+        font-size: 14px;
+        max-height: 360px;
+        overflow-y: auto;
+
+        li {
+          overflow: hidden;
+          padding: 16px 24px;
+          border-top: 1px solid #ccc;
+
+          &:first-of-type {
+            border: none;
+          }
+
+          >div {
+            float: left;
+
+            &:first-of-type {
+              width: 11.5%;
+            }
+
+            &:last-of-type {
+              width: 88.5%;
+              padding-left: 20px;
+
+              >div {
+                font-size: 14px;
+                color: #333;
+              }
+
+              p {
+                font-size: 12px;
+                color: #999;
+                line-height: 22px;
+                margin: 6px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.user-setting {
+  top: 76px !important;
+}

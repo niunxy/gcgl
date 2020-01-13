@@ -1,0 +1,91 @@
+.map-instance {
+  height: 100%;
+}
+
+.map-wrap {
+  .proj-search-wrapper{
+    width: 250px;
+    margin: 10px auto;
+  }
+  .ant-menu-inline{
+    height: initial !important;
+  }
+  .breadcrumb {
+    width: calc(100% - 300px);
+  }
+
+  height: calc(100% - 70px);
+  width: 100%;
+
+  section {
+    height: 100%;
+    width: 100%;
+
+    aside {
+      height: 100%;
+      width: 100%;
+
+    }
+  }
+
+  .ant-layout-sider {
+    width: 300px !important;
+    min-width: 300px !important;
+    max-width: 300px !important;
+
+    .ant-layout-sider-trigger {
+      left: 300px;
+    }
+  }
+
+  .ant-layout-sider.ant-layout-sider-collapsed {
+    width: 60px !important;
+    min-width: 60px !important;
+    max-width: 60px !important;
+
+    .ant-menu-inline-collapsed {
+      width: 60px !important;
+
+      .ant-menu-submenu-title {
+        padding: 0 22px !important
+      }
+    }
+
+    .ant-layout-sider-trigger {
+      left: 60px;
+    }
+  }
+
+  .trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .trigger:hover {
+    color: #1890ff;
+  }
+
+  .count{
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 12px;
+    color: white;
+    background-color: rgb(28, 149, 253);
+  }
+
+  .SystemManagement-user-wrap {
+    display: inline-flex;
+    justify-content: space-between; // space-around; // center; //子元素水平位置
+    align-items: center; //子元素垂直居中
+    // color: white;
+    height: 100%;
+    width: 150px;
+    float: right;
+  }
+}

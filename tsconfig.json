@@ -1,0 +1,59 @@
+
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "module": "esnext",
+    // "module": "es6",
+    "target": "es5",
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "experimentalDecorators": true, 
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+
+
+    "rootDir": "src/",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+
+
+    "allowSyntheticDefaultImports": true, 
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@config/*": ["./src/config/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@layouts/*": ["./src/layouts/*"],
+      "@api/*": ["./src/api/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@css/*": ["./src/css/*"],
+      "@global/*": ["./src/global/*"],
+      "@stores/*": ["./src/stores/*"]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "webpack.common.js",
+    "webpack.dev.js",
+    "webpack.prod.js",
+    "postcss.config.js",
+    "public"
+  ]
+}

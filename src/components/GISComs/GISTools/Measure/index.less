@@ -1,0 +1,48 @@
+@height : 40px;
+@activeColor: #1890ff;
+
+.measure-wrap {
+    background-color: aliceblue;
+    display: inline-flex;
+    flex-direction: row-reverse;
+    min-width: @height;
+    height: @height;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+
+    &:hover {
+        cursor: pointer;
+
+        .measure-child {
+            display: block;
+        }
+    }
+
+    &>.measure-title {
+        display: inline-block;
+        height: @height;
+        width: @height;
+        text-align: center;
+        line-height: @height;
+        &:hover {
+            color: @activeColor;
+        }
+    }
+
+    &>.measure-child {
+        height: 100%;
+        width: @height;
+        text-align: center;
+        line-height: @height;
+        display: none;
+
+        &:hover {
+            color: @activeColor;
+        }
+    }
+
+    .measure-distance {
+        border: 1px dashed #d9d9d9;
+        border-top: none;
+        border-bottom: none;
+    }
+}

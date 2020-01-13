@@ -1,0 +1,97 @@
+@import '../../css/app/theme.less';
+
+.systemTitle {
+  height: 81px;
+  background: url('./img/loginTitle.png') no-repeat;
+  background-position-x: 10%;
+  background-position-y: center;
+  margin-top: 40px;
+}
+
+.footer {
+  height: 18%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.65);
+  }
+}
+
+.login-box {
+  background: url('./img/indexBg.jpg') no-repeat 100% 100%;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+.loginContainer {
+  /*  background: url('./img/mapLoginBackground.jpg') no-repeat 100% 100%;
+  background-size: cover; */
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loginForm {
+    position: absolute;
+    right: 30%;
+    top: 47%;
+    // transform: translateY(-85%);
+    transform: translate(50%; -50%);
+    width: 379px;
+    background-color: #fff;
+    padding: 24px;
+    border-radius: @theme-border-radius;
+
+    .title {
+      color: rgba(0, 0, 0, 0.65);
+      text-align: center;
+      height: 60px;
+      line-height: 60px;
+      font-size: @font-size-base * 2;
+      background: url('./img/profilePicture.png') no-repeat;
+      background-size: 40px 40px;
+      background-position-x: 10%;
+      background-position-y: center;
+    }
+
+    .loginBtn {
+      width: 100%;
+    }
+  }
+
+  .ant-form-item-children {
+    display: inline-block;
+    width: 100%;
+
+    &>label {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &>.login-none-account {
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &>.login-get-account {
+        text-decoration: underline;
+        font-weight: 700;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

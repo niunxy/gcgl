@@ -1,0 +1,81 @@
+@import '../../css/app/theme.less';
+
+.homeWrap {
+  height: 100%;
+  width: 100%;
+
+  .home-header {
+    .home-header-top {
+      height: 147px;
+      width: 100%;
+      background-color: white;
+      padding: 40px 100px;
+      display: flex;
+
+      h1 {
+        color: #1890ff;
+      }
+
+      img {
+        width: 171px;
+        height: 81px;
+      }
+    }
+  }
+
+
+  @height: 604px;
+
+  .home-content-container {
+    height: auto;
+    width: 100%;
+    padding-bottom: 130px; // footer fixed padding 掉 footer 的高度 如果 header 固定也需要 padding 掉 header 的高度
+
+    .home-content-Carousel {
+      height: 604px;
+
+      .ant-carousel .slick-slide {
+        // height: 100%;
+        height: 604px;
+        text-align: center;
+        line-height: 160px;
+        background: #364d79;
+        overflow: hidden;
+
+        .carousel-item {
+          display: inline-block;
+          height: @height;
+          width: 100%;
+
+          &>img {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+          }
+        }
+      }
+
+      .ant-carousel .slick-slide h3 {
+        color: #fff;
+      }
+    }
+
+    .home-content-body {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      color: black;
+      height: auto;
+      width: 100%;
+
+      .home-content-subModules {
+        height: auto;
+        width: 61.8%;
+        margin: 15px 0px;
+        // test
+        // background-color: aqua;
+        border: 1px solid rgb(217, 217, 217);
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <link rel="stylesheet" href="./libs/arcgis-api-js/esri/css/main.css">
+  <link rel="stylesheet" href="./libs/arcgis-api-js/esri/css/view.css">
+  <!-- <link href="Cesium/Widgets/widgets.css" rel="stylesheet"> -->
+</head>
+<script src='./config.js'></script>
+<script>
+  var  locationPath = location.pathname.replace( /\/[^\/]+$/ , "" )
+  dojoConfig = {
+    baseUrl: "./libs/arcgis-api-js/dojo",
+    packages: [{
+      "name": "extensionJS",
+      "location": locationPath + "/libs/arcgis-extension-js"
+    }],
+  }
+</script>
+
+<!-- <script src="Cesium/Cesium.js"></script> -->
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+  </div>
+</body>
+</html>

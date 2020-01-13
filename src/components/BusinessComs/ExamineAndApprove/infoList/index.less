@@ -1,0 +1,83 @@
+@import '../../../../css/app/theme.less';
+
+.file-statics {
+    border-left: 1px solid rgba(233, 233, 233, 1);
+
+    >div {
+        &:first-of-type {
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        &:last-of-type {
+            line-height: 40px;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &:first-of-type {
+        border: none;
+    }
+}
+
+.detail-box {
+    color: #000;
+    min-height: 300px;
+
+    >div {
+        line-height: 50px;
+
+        h1 {
+            border-bottom: 1px solid #ccc;
+        }
+    }
+
+    ul {
+        color: #333;
+        font-size: 13px;
+        border: 1px solid #ccc;
+        padding: 0 16px 10px 24px;
+        margin: 12px 0;
+
+        li {
+            line-height: 40px;
+            border-bottom: 1px dashed #ccc;
+
+            &:hover {
+                background-color: #f5f5f5;
+            }
+
+            div {
+                float: left;
+                width: calc(100% - 40px);
+
+                &:first-of-type {
+                    width: 40px;
+                }
+            }
+        }
+    }
+}
+
+.information {
+
+    .card {
+        width: calc(100% - 48px);
+        margin: 20px auto 20px 28px;
+        border-radius: 15px;
+        padding: 0 20px;
+
+        .ant-card-head {
+            padding: 0;
+        }
+
+        .ant-card-body {
+            padding: 24px 0;
+        }
+    }
+
+    .ant-table-tbody>tr>td {
+        padding: 9px;
+    }
+}

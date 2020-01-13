@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 土地工程项目监督管理平台 </title>
+  <link rel="stylesheet" href="./libs/arcgis-api-js/esri/css/main.css">
+  <link rel="stylesheet" href="./libs/arcgis-api-js/esri/css/view.css">
+</head>
+<script src='./config.js'></script>
+<script>
+  var  locationPath = location.pathname.replace( /\/[^\/]+$/ , "" )
+  dojoConfig = {
+    baseUrl: "./libs/arcgis-api-js/dojo",
+    packages: [{
+      "name": "extensionJS",
+      "location": locationPath + "/libs/arcgis-extension-js"
+    }],
+  }
+</script>
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+  </div>
+  <script type="text/javascript" src="static/js/index.js"></script>
+</body>
+
+</html>

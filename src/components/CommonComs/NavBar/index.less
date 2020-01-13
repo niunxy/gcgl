@@ -1,0 +1,60 @@
+@import '../../../css/app/theme.less';
+
+/** 自定义 */
+.navBar-wrap {
+  width: 100%;
+  padding-left: 80px;
+  ul {
+    // box-sizing: border-box;
+    .ant-menu-item {
+      height: 100%;
+      vertical-align: super;
+
+      a {
+        font-size: 16px;
+        color: @headerFontColor  !important;
+        padding: 0 20px;
+        text-decoration: none;
+
+        i {
+          top: 2px !important;
+          ;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    li {
+      padding: 0 !important;
+    }
+
+    li:nth-of-type(14) {
+      display: none;
+    }
+
+    .ant-menu-item-selected {
+      background-color: @navBarHoverColor  !important;
+      border: @navBarHoverColor  !important;
+    }
+
+    .ant-menu-item-active {
+      background-color: @navBarHoverColor  !important;
+      border: @navBarHoverColor  !important;
+    }
+
+    .NavBars-activeNavLink {
+      color: @headerFontColor  !important;
+      background-color: @navBarSelectedColor  !important;
+      display: block;
+    }
+  }
+
+  .ant-menu-horizontal {
+    border: none;
+  }
+}
